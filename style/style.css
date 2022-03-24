@@ -1,0 +1,981 @@
+/*Обнуление*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+body {
+    font-family: Rubik;
+    font-size: 24px;
+    color: black;
+}
+input {
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+input:focus,
+input:active {
+    color: black;
+    outline: 2px solid #80B28E;
+    box-shadow: 0 0 5px 0 #80B28E;
+}
+input.imya::-webkit-input-placeholder {color:#80B28E ; opacity:1;}/* webkit */
+input.imya::-moz-placeholder {color:#80B28E ; opacity:1;}/* Firefox 19+ */
+input.imya:-moz-placeholder {color:#80B28E ; opacity:1;}/* Firefox 18- */
+input.imya:-ms-input-placeholder {color:#80B28E ; opacity:1;}/* IE */
+
+input.telefon::-webkit-input-placeholder {color:#80B28E ; opacity:1;}/* webkit */
+input.telefon::-moz-placeholder {color:#80B28E ; opacity:1;}/* Firefox 19+ */
+input.telefon:-moz-placeholder {color:#80B28E ; opacity:1;}/* Firefox 18- */
+input.telefon:-ms-input-placeholder {color:#80B28E ; opacity:1;}/* IE */
+
+input.imya__dva::-moz-placeholder {color:#80B28E ; opacity:1;}/* Firefox 19+ */
+input.imya__dva::-webkit-input-placeholder {color:#80B28E ; opacity:1;}/* webkit */
+input.imya__dva:-moz-placeholder {color:#80B28E ; opacity:1;}/* Firefox 18- */
+input.imya__dva:-ms-input-placeholder {color:#80B28E ; opacity:1;}/* IE */
+
+input.telefon__dva::-webkit-input-placeholder {color:#80B28E ; opacity:1;}/* webkit */
+input.telefon__dva::-moz-placeholder {color:#80B28E ; opacity:1;}/* Firefox 19+ */
+input.telefon__dva:-moz-placeholder {color:#80B28E ; opacity:1;}/* Firefox 18- */
+input.telefon__dva:-ms-input-placeholder {color:#80B28E ; opacity:1;}/* IE */
+/* =================================================================*/
+
+.wrapper{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.main {
+    flex: 1 1 auto;
+}
+
+/* ----------------------------------------------------------------*/
+[class*="__container"]{
+    padding: 0 178px 0 178px;
+    max-width: 1564px;
+    margin: 0px auto;
+    height: 90px;
+    font-size: 20px;
+}
+[class*="__box"]{
+    width: 272px;
+    height: 200px;
+    background-color: #A3DBB3;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    margin: 40px 20px 40px 20px;
+    padding: 31px 24px 30px 24px;
+}
+
+[class*="__text"]{
+    width: 224px;
+    height: 139px;
+    text-align: left;
+}
+
+[class*="__texts"]{
+    width: 393px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 55px 0 55px 0;
+}
+
+[class*="__block"]{
+    width: 150px;
+    height: 300px;
+    background-color: #A3DBB3;
+    margin: 0 -41.5px 0 0;
+}
+[class*="__rectangle"]{
+    width: 375px;
+    height: 600px;
+    background-color: #A3DBB3;
+}
+
+.header {
+    background-color: #94D2B1;
+}
+.header__container {
+    align-items: center;
+    display: flex;
+}
+.header__logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+.header__menu {
+    flex: 1 1 auto;
+}
+.menu {
+}
+.menu__list {
+}
+.menu__item {
+    display: flex;
+    justify-content: center;
+}
+.menu__link {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.header__left {
+    display: flex;
+}
+.icons {
+
+}
+.number {
+    font-weight: 500;
+}
+.main {
+    background-color: #E5EFFD;
+}
+.footer {
+}
+
+.telephone {
+    margin: 0 18px 0 5px;
+}
+.whatsapp {
+    margin: 0 5px 0 0;
+}
+
+/* ================================================================= */
+
+.first_page {
+    display: flex;
+    width: 1920px;
+    height: 950px;
+}
+
+.first_page__content{
+    font-weight: 500;
+    font-size: 48px;
+    max-height: 171px;
+    max-width: 481px;
+    margin: 100px 142px 0 357px;
+}
+.medium {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 40px 0 0 0;
+}
+.button {
+    font-weight: 500;
+    color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 14.5px 60px;
+    background-color: #00A72F;
+}
+
+.main__button {
+    padding: 40px 0 0 0;
+}
+
+.osmotr {
+    width: 584px;
+    height: 750px;
+    margin: 60px 0 0 0;
+}
+.stelki {
+    margin: 40px 0 0 0;
+    width: 583px;
+    height: 350px;
+}
+/*---------------------------------------------------------------- */
+
+.second_page {
+    background-color: #fff;
+    width: 1920px;
+    height: 950px;
+}
+.second_page_container{
+    max-width: 1208px;
+    max-height: 841px;
+    padding: 100px 356px 100px 356px;
+    display: flex;
+}
+.about {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+}
+.about h1 {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+}
+.about_text {
+    height: 204px;
+    width: 539px;
+    margin-right: 85px;
+}
+.panaev {
+    margin-top: 40px;
+    width: 584px;
+    height: 500px;
+}
+.about_right {
+    width: 584px;
+    height: 676px;
+}
+.plantoskop {
+    width: 584px;
+    height: 500px;
+    margin-bottom: 40px;
+}
+
+/* =================================================================*/
+
+.third_page {
+    height: 966px;
+    background-color: #fff;
+}
+.third_container {
+    width: 1208px;
+    height: 586px;
+    margin: 47px 354px 0 358px;
+    display: flex;
+    flex-direction: row;
+}
+.third_container p {
+    margin-top: 10px;
+}
+.third_page h6 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.pokazania {
+    width: 748px;
+    height: 290px;
+    padding: 100px 816px 0 356px;
+}
+.pokazania h1 {
+    width: 746px;
+    height: 114px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56.68px;
+}
+.pokazania p {
+    font-weight: 400;
+    font-size: 24px;
+    width: 584px;
+    height: 136px;
+    margin-top: 40px;
+    line-height: 140%;
+}
+.ploskostopie__box {
+}
+.pozvonochnik__box {
+}
+.dlina__box {
+}
+.zabolevania__box {
+    margin-bottom: 46px;
+}
+.chastie__box {
+}
+.shpora__box {
+}
+.bol__box {
+}
+.first_column {
+    margin-left: -20.5px;
+    margin-top: 168px;
+}
+.second_column {
+    margin-top: 50px;
+}
+.third_column {
+    margin-top: -96px;
+}
+.fourth_column {
+    margin-top: 15px;
+}
+
+/********************************/
+
+.fourth_page {
+    width: 1920px;
+    height: 300px;
+    background-color: #E5EFFD;
+    display: flex;
+}
+.zapishites {
+    width: 552px;
+    height: 218px;
+    margin: 41px 0 41px 356px;
+}
+.zapishites h1 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+}
+.zapishites p {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+.vvod_dannyh {
+    width: 376px;
+    height: 220px;
+    display: grid;
+    margin: 40px 564px 40px 72px;
+}
+.imya {
+    width: 376px;
+    height: 60px;
+}
+.telefon {
+    width: 376px;
+    height: 60px;
+    margin-top: 20px;
+    color: #80B28E;
+}
+.zapisatsya {
+    padding: 14.5px;
+    width: 376px;
+    height: 50px;
+    background-color: #00A72F;
+    margin-top: 30px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #fff;
+}
+
+/****************************************************************/
+
+.fifth_page {
+    background-color: #fff;
+    max-width: 1920px;
+    height: 1422px;
+}
+.fifth_page img {
+    margin-left: 19px;
+}
+.fifth_page_container {
+    width: 1208px;
+    height: 1222px;
+    padding: 100px 356px 100px 356px;
+}
+.fifth_page_container h1 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 140%;
+}
+.fifth_page_container p {
+    display: grid;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+}
+.pochemy {
+
+}
+.pochemy h1 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+    width: 480px;
+    height: 114px;
+}
+.pochemy p {
+    margin-top: 40px;
+    height: 68px;
+    width: 584px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+}
+.proffesional {
+    display: flex;
+    margin: 40px 0 19px 0;
+    width: 920px;
+    height: 300px;
+}
+.likes {
+}
+.kachestvo {
+    display: flex;
+    margin: 40px 0 19px 288px;
+    width: 1075px;
+    height: 300px;
+}
+.forms {
+    
+}
+.opit {
+    display: flex;
+    margin: 40px 0 19px 0;
+    width: 1075px;
+    height: 300px;
+}
+.ruki {
+}
+
+/* ================================================================= */
+
+.six_page {
+    background-color: #E5EFFD;
+    height: 820px;
+    display: grid;
+}
+.specialists {
+    padding-top: 40px;
+    margin-left: 356px;
+    width: 584px;
+    height: 163px;
+}
+.specialists h1 {
+    width: 480px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+}
+.specialists p {
+    width: 584px;
+    height: 67px;
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+}
+.six_page_container {
+    display: flex;
+    width: 1208px;
+    height: 500px;
+    padding-left: 357.5px;
+    margin-top: 40px;
+}
+.andrei {
+    margin-right: 20px;
+    width: 376px;
+    height: 500px;
+}
+.andr {
+    width: 376px;
+    height: 400px;
+}
+.kisa {
+    width: 376px;
+    height: 500px;
+}
+.petya {
+    width: 376px;
+    height: 400px;
+}
+.jenya {
+    width: 376px;
+    height: 500px;
+}
+.jen {
+    width: 376px;
+    height: 400px;
+}
+.rounds {
+}
+
+.jenya,
+.kisa {
+    margin:0 20px 0 20px;
+}
+.andrei h1,
+.kisa h1,
+.jenya h1 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 10px 0px;
+}
+.andrei p,
+.kisa p,
+.jenya p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 10px 0px;
+}
+.circles{
+    display: flex;
+    margin-left: 939px;
+    margin-top: -19.5px;
+}
+.rounds {
+    background: #A3DBB3;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    margin: 0 7.5px 0 7.5px;
+}
+
+.rounds:hover {
+    background: #00A72F;
+    transition: 0.16s ease-in;
+}
+
+/************************/
+
+.seven_page {
+    background-color: #fff;
+}
+.diagnostika{
+    padding: 100px 0 0 356px;
+    width: 688px;
+    height: 290px;
+}
+.diagnostika h1 {
+    width: 676px;
+    height: 114px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+}
+.diagnostika p {
+    margin-top: 40px;
+    width: 688px;
+    height: 136px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+}
+.cards { 
+    padding: 129px 0 0 357px;
+    display: flex;
+}
+.cards h1 {
+    width: 27px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 140%;
+    padding: 78px 0 0 39px;
+}
+.cards h2 {
+    width: 256px;
+    height: 45px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+}
+.cards p {
+    width: 256px;
+    height: 84px;
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+}
+.konsultacia__rectangle {
+    margin: 0 40px 0 0;
+}
+.diagnostica__rectangle {
+    margin: 0 40px 0 0;
+}
+.diagnostica__rectangle p {
+    width: 251px;
+    height: 84px;
+}
+.diagnostica__rectangle img {
+    padding-top: 83px;
+}
+.izgotovlenie__rectangle {
+}
+.izgotovlenie__rectangle p {
+    width: 250px;
+    height: 112px;
+}
+.txt {
+    width: 298px;
+    height: 139px;
+    display: grid;
+    padding: 0px 38px 83px 82px;
+}
+
+/************************/
+
+
+.eight_page {
+        background-color: #fff;
+        padding-top: 100px;
+}
+.otziv {
+    width: 688px;
+    height: 199px;
+    margin: 0 0 0 356px;
+}
+.otziv h1 {
+    width: 186px;
+    height: 57px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+}
+.otziv p {
+    margin-top: 40px;
+    width: 688px;
+    height: 102px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+}
+.zaharov {
+    width: 1208px;
+    height: 400px;
+    background-color: #E5EFFD;
+    display: flex;
+    margin: 40px 0 0 356px;
+}
+.zaharov h1 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    width: 435px;
+    height: 24px;
+}
+.zaharov p {
+    width: 584px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 15px;
+}
+.zaharov img {
+    width: 376px;
+    height: 300px;
+    margin: 50px 40px 0 0;
+}
+.ms {
+    height: 303px;
+    width: 584px;
+    margin: 49px 40px 48px 104px;
+}
+.feedback {
+    display: flex;
+    width: 1201px;
+    height: 469px;
+    margin: 40px 0 0 358px;
+}
+.feedback h1 {
+    width: 156px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.feedback p {  
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px; 
+    margin-top: 15px;
+}
+.feedback img {
+    margin-bottom: 15px;
+}
+.julia {
+    width: 376px;
+    height: 469px;
+    margin-right: 38px;
+}
+.alenaY {
+    width: 376px;
+    height: 469px;
+    margin-right: 35px;
+}
+.panaevA {
+    width: 376px;
+    height: 469px;
+}
+.panaevA h1 {
+    width: 175px;
+    height: 24px;
+}
+.show_more_button {
+    margin: 30px 0 0 772px;
+}
+.show_more {
+    font-weight: 500;
+    color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 14.5px 60px;
+    background-color: #00A72F;
+}
+
+/* ================================================================= */
+
+.nine_page {
+    background-color: #fff;
+}
+.price_text {
+    width: 688px;
+    height: 248px;
+    padding: 120px 0 0 356px;
+}
+.price_text h1 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+    padding-bottom: 40px;
+}
+.price_text p {
+    width: 688px;
+    height: 151px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+}
+.price {
+    display: flex;
+    margin: 220px 0 0 560px;
+}
+.fat {
+    font-weight: 500;
+    margin: -33px 0 0 100px;
+}
+.naimenovanie h1 {
+    display: grid;
+    width: 801px;
+    height: 106px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    padding: 20px;
+}
+.naimenovanie h2 {
+    display: grid;
+    width: 801px;
+    height: 106px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    background-color: #A3DBB3;
+    padding: 20px;
+}
+.uslugi h1 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    height: 106px;
+    padding: 20px;
+}
+.uslugi p {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    height: 106px;
+    padding: 20px;
+}
+.green__kvadrat {
+    width: 700px;
+    height: 106px;
+    background-color: #A3DBB3;
+}
+.stoimost h3 {
+    height: 106px;
+    display: grid;
+    justify-content: end;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    padding: 20px;
+}
+.stoimost h4 {
+    height: 106px;
+    display: grid;
+    justify-content: end;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    background-color: #a3dbb3;
+    padding: 20px;
+}
+
+/********************************/
+
+.ten_page {
+    background-color: #fff;
+    padding-top: 100px;
+}
+.ten_page_content {
+    display: flex;
+    width: 1208px;
+    height: 550px;
+    background-color: #A3DBB3;
+    margin: 0 356px 0 356px;
+}
+.ten_page_content img {
+    width: 480px;
+    height: 350px;
+    margin: 100px 0 100px 120px;
+}
+.pravaya {
+
+}
+.priziv {
+    width: 478px;
+    height: 136px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    margin: 89px 104px ;
+}
+.vvod_dannyh__dva {
+    width: 376px;
+    height: 220px;
+    display: grid;
+    margin: -80px 564px 40px 106px;
+}
+.imya__dva {
+    width: 376px;
+    height: 63px;
+}
+.telefon__dva {
+    width: 376px;
+    height: 63px;
+    margin-top: 20px;
+    color: #80B28E;
+}
+.zapisatsya__dva {
+    padding: 15px 60px;
+    width: 376px;
+    height: 51px;
+    background-color: #00A72F;
+    margin-top: 30px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #fff;
+}
+
+/********************************/
+
+.elleven_page {
+    display: flex;
+    background-color: #fff;
+    padding-top: 167px;
+}
+.contacts {
+    width: 431px;
+    height: 263px;
+    margin: 22px 89px 0 356px;
+}
+.contacts p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    margin-left: 20px;
+}
+.contacts h1 {
+    width: 233px;
+    height: 57px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+}
+.contacts img {
+    width: 50px;
+    height: 50px;
+}
+.dom {
+    display: flex;
+    margin-top: 40px;
+}
+.work {
+    display: flex;
+    margin-top: 30px;
+}
+.img-responsive {
+    width: 1044px;
+    height: 350px;
+}
+
+/********************************/
+
+.footer {
+    height: 400px;
+    background-color: #E5EFFD;
+    display: flex;
+}
+.contacti {
+    width: 479px;
+    height: 270.29px;
+    margin: 50px 23px 79.71px 357px;
+}
+.contacti h2 {
+    width: 479px;
+    height: 85px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+}
+.contacti h1 {
+    width: 479px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+    margin-top: 40px;
+}
+.contacti img {
+    width: 50px;
+    height: 50px;
+    margin-top: 39.29px;
+}
+.img-dom {
+    width: 584px;
+    height: 300px;
+}
+
+.domimg {
+    margin-top: 51px;
+}
